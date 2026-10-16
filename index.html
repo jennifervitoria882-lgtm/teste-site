@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bar du Leo</title>
+
+    <link rel="stylesheet" href="barduleopagina-1.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+
+       <div class="logo">
+    <img src="logo.jpg" alt="Logo do Bar du Leo">
+</div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#pedido">Meu Pedido</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+    </header>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- INÍCIO -->
+        <section id="inicio" class="inicio">
+
+            <h1>Bar du Leo</h1>
+
+            <p>
+                Confira nossos sabores!
+            </p>
+
+            <a href="#cardapio" class="botao">
+                Ver cardápio
+            </a>
+
+        </section>
+
+
+        <!-- CATEGORIAS -->
+        <section id="cardapio">
+
+            <h2>Cardápio</h2>
+
+            <div class="categorias">
+
+                <a href="#pasteis">Pastéis</a>
+                <a href="#bolinhas">Bolinhos</a>
+                <a href="#caldos">Caldos</a>
+                <a href="#sanduiches">Sanduíches</a>
+                <a href="#porcoes">Porções</a>
+                <a href="#cervejas">Cervejas</a>
+                <a href="#drinks">Drinks</a>
+                <a href="#bebidas">Bebidas</a>
+
+            </div>
+
+
+            <!-- PRODUTOS -->
+
+            <div class="produtos">
+
+                <article class="produto">
+
+                    <h3>Trio da Praça</h3>
+
+                    <p>
+                        3 unidades: carne, queijo e frango.
+                    </p>
+
+                    <strong>R$ 25,00</strong>
+
+                    <button>
+                        Adicionar ao pedido
+                    </button>
+
+                </article>
+
+
+                <article class="produto">
+
+                    <h3>Pastel de Queijo</h3>
+
+                    <p>
+                        Pastel recheado com queijo.
+                    </p>
+
+                    <strong>R$ 9,50</strong>
+
+                    <button>
+                        Adicionar ao pedido
+                    </button>
+
+                </article>
+
+
+                <article class="produto">
+
+                    <h3>Pastel de Carne</h3>
+
+                    <p>
+                        Pastel recheado com carne.
+                    </p>
+
+                    <strong>R$ 9,50</strong>
+
+                    <button>
+                        Adicionar ao pedido
+                    </button>
+
+                </article>
+
+
+                <article class="produto">
+
+                    <h3>Batata Frita</h3>
+
+                    <p>
+                        Porção de batata frita.
+                    </p>
+
+                    <strong>R$ 17,00</strong>
+
+                    <button>
+                        Adicionar ao pedido
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- PEDIDO -->
+        <section id="pedido">
+
+            <h2>Meu Pedido</h2>
+
+            <div id="lista-pedido">
+
+                <p>
+                    Seu pedido está vazio.
+                </p>
+
+            </div>
+
+            <p>
+                Total: <strong>R$ 0,00</strong>
+            </p>
+
+        </section>
+
+
+        <!-- FORMULÁRIO -->
+        <section id="contato">
+
+            <h2>Finalizar Pedido</h2>
+
+            <form>
+
+                <label for="nome">
+                    Nome:
+                </label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required
+                >
+
+
+                <label for="telefone">
+                    Telefone:
+                </label>
+
+                <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="(32) 99999-9999"
+                    required
+                >
+
+
+                <label for="endereco">
+                    Endereço:
+                </label>
+
+                <input
+                    type="text"
+                    id="endereco"
+                    name="endereco"
+                    placeholder="Digite seu endereço"
+                    required
+                >
+
+
+                <label for="pagamento">
+                    Forma de pagamento:
+                </label>
+
+                <select id="pagamento" name="pagamento">
+
+                    <option value="">
+                        Selecione
+                    </option>
+
+                    <option value="pix">
+                        Pix
+                    </option>
+
+                    <option value="dinheiro">
+                        Dinheiro
+                    </option>
+
+                </select>
+
+
+                <label for="observacao">
+                    Observações:
+                </label>
+
+                <textarea
+                    id="observacao"
+                    name="observacao"
+                    placeholder="Alguma observação sobre o pedido?"
+                ></textarea>
+
+
+                <button type="submit">
+                    Finalizar pedido
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <h3>Bar du Leo</h3>
+
+        <p>
+            R. Uruguaiana, 72 - Jardim Glória
+        </p>
+
+        <p>
+            Juiz de Fora - MG
+        </p>
+
+        <p>
+            Telefone: (32) 3215-9112
+        </p>
+
+        <p>
+            © 2026 Bar du Leo
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
